@@ -2,7 +2,6 @@ import React from "react";
 import Result from "./Result";
 
 function Results({ results, openPopup }) {
-    console.log("DFdf", results);
     if (typeof results != "undefined") {
         return (
             <section className="results">

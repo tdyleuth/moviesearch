@@ -78,8 +78,6 @@ section {
     font-weight: 500;
     padding: 10px;
     background: rgb(37, 37, 37);
-    flex: 1 1 100%;
-    transition: 0.4 ease-out;
 }
 
 .results .result:hover h3 {
@@ -109,10 +107,12 @@ section {
 .popup .content h2 {
     font-size: 28px;
     font-weight: 600px;
+    text-align: center;
 }
 
 .popup .content .rating {
     margin-bottom: 30px;
+    color: red;
 }
 
 .popup .content .plot {
@@ -130,26 +130,27 @@ section {
 .popup .content .plot p {
     flex: 1 1 50%;
     padding: 15px;
+    font-size: 22px;
 }
 
 .popup .content .close {
-    display: inline-block;
-    padding: 15px 30px;
+    float: right;
+    padding: 10px 15px;
     font-size: 18px;
     font-weight: 700;
-
-    background: #0cc568;
-    color: blue;
+    background: #ffffff;
+    color: rgb(0, 0, 0);
     border-radius: 8px;
     border: none;
     outline: none;
     appearance: none;
     cursor: pointer;
     transition: 0.4s ease-out;
+    text-transform: uppercase;
 }
 
 .popup .content .close:hover {
-    background: darkblue;
+    background: rgb(229, 253, 14);
 }
 
 .noresults {
