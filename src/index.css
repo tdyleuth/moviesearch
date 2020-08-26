@@ -151,3 +151,9 @@ section {
 .popup .content .close:hover {
     background: darkblue;
 }
+
+.noresults {
+    color: rgb(138, 9, 9);
+    text-align: center;
+    font-size: 25px;
+}

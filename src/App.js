@@ -21,10 +21,9 @@ function App() {
                 setState((prevState) => {
                     return { ...prevState, results: results };
                 });
-
-                console.log(results);
             } catch (err) {
                 console.error(err);
+                throw err;
             }
         }
     };
