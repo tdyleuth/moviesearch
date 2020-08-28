@@ -17,6 +17,7 @@ function App() {
                 let res = await axios(API_URL + "&s=" + state.searchVal);
 
                 let results = res.data.Search;
+                console.log("Results", results);
 
                 setState((prevState) => {
                     return { ...prevState, results: results };
@@ -60,7 +61,7 @@ function App() {
     return (
         <div className="App">
             <header>
-                <h1>Movie Database</h1>
+                <h1>Movie Database Search</h1>
             </header>
             <main>
                 <Search handleInput={handleInput} search={search} />
